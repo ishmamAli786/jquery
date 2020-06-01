@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic synatx of jquery</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.css">
+</head>
+<body>
+    <h1>Basic Syntax of Jquery</h1>
+    <div id="test1">
+        <h2>Text Box  1</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    </div>
+    <div id="test2">
+        <h2>Text Box  2</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    </div>
+    <script>
+        $(document).ready(function(){
+          var a= $('#test1').html();
+          //.html() method use for collecting html data this method tell that we
+          //are getting html data
+           console.log(a);
+           var b= $('#test2').html();
+           console.log(b);
+        });
+    </script>
+</body>
+</html>
