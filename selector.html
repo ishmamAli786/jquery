@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery selector</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.css">
+</head>
+<body>
+    <h1>Jquery selector</h1>
+    <div id="box" class="test">
+        <h2>Text Box  1</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    </div>
+    <table>
+        <ul id="list">
+            <li>Orange</li>
+            <li class="test">Bannana</li>
+            <li>Grapes</li>
+            <li class="test">Apple</li>
+            <li>Gava</li>
+        </ul>
+    </table>
+    <script>
+        $(document).ready(function(){
+           // $('ul li:eq(2)').css('border','red 2px solid');
+            //eq is a psuedo class that is used for styling randomly in any number in the list
+          //  $('ul li:gt(2)').css('border','red 2px solid');
+            // gt psuedo class used for styling on the all element greater than number which we will give in the parenthesis
+            $('ul li:lt(2)').css('border','red 2px solid');
+        });
+    </script>
+</body>
+</html>
